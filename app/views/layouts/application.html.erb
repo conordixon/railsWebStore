@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
-<header class="headsec">
-  <li><%= link_to "Log In", "user#login" %></li>
-  <li><%= link_to "Log Out", "user#logout" %></li>
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+<header>
   Welcome to your first home web page.
   <h1>Home Page</h1>
+</header>
+<div class="container">
+  <%= yield %>
   <ul>
     <li><%= link_to "Product Items", productitems_path %> </li>
   </ul>
   <title><%= yield (:title) %> RailsWebStore</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-</header>
+
 <body>
-<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-<div class="container">
-  <%= yield %>
+
 </div>
-</body>
 <footer class="foot">
-  <h1>This is the footer</h1>
+  <h1>Im the Footer</h1>
 </footer>
+</body>
 </html>
