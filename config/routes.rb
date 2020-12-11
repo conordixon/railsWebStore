@@ -1,16 +1,11 @@
 Rails.application.routes.draw do
+  get 'cart/index'
   get 'home/index'
   get '/home' => 'home#index'
 
-  # resources :users
-  #   resources :login
-  #   resources :logout
-  #   resources :signup
-  #
-  # get 'user/login'
-  # get 'user/logout'
-  # get '/user' => 'user#login'
-  # get '/user' => 'user#logout'
+
+  get '/login' => 'user#login'
+  get '/logout' => 'user#logout'
 
   resources :productitems
     resources :new
