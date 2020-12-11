@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+</p>
+<p>
+  <strong>Productname:</strong>
+  <%= @productitem.productname %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @productitem.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @productitem.price %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @productitem.brand %>
+</p>
+<%= render 'form', productitem: @productitem %>
+<%= link_to 'Edit', edit_productitem_path(@productitem) %> |
+<%= link_to 'Back', productitems_path %>
