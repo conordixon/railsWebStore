@@ -1,3 +1,4 @@
+<div class="mainCont">
 <%= form_with(model: productitem, local: true) do |form| %>
   <% if productitem.errors.any? %>
     <div id="error_explanation">
@@ -12,25 +13,22 @@
   <% end %>
   <div class="field">
     <%= form.label :productname %>
-    <%= form.text_field :productname %>
+    <%= form.text_field :productname, id: :productitem_name, :type =>"text"%>
   </div>
-
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_field :description, id: :productitem_description, :type =>"text" %>
   </div>
-
   <div class="field">
     <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.text_field :price, id: :productitem_price, :type =>"text" %>
   </div>
-
   <div class="field">
     <%= form.label :brand %>
-    <%= form.text_field :brand %>
+    <%= form.text_field :brand, id: :productitem_brand, :type =>"text" %>
   </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>
