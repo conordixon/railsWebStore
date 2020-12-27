@@ -28,15 +28,19 @@
         <td><%= productitem.price %></td>
         <td><%= productitem.brand %></td>
         <td><%= link_to 'Show', productitem %></td>
-        <td><%= link_to 'Edit', edit_productitem_path(productitem) %></td>
-        <td><%= link_to 'Destroy', productitem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if user_signed_in? %>
+        <td><%= link_to 'Edit', edit_productitem_path(productitem)%></td>
+        <td><%= link_to 'Destroy', productitem, method: :delete, data: { confirm: 'Are you sure?' }%></td>
+        <% end %>
+        <% if user_signed_in? %>
+        <td><a href="/cart/<%= productitem.id %>" class="button">Add To Cart</a></td>
+        <% end %>
       </tr>
-    <% end %>
-    <ul>
+      <% end %>
+      <ul>
       <li><%= link_to "Home", "home#index" %></li>
-    </ul>
+      </ul>
   </tbody>
 </table>
 <br>
-
-<%= link_to 'New Productitem', new_productitem_path %>
+  <%= link_to 'New Productitem', new_productitem_path %>

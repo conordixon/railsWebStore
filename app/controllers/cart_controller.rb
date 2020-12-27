@@ -1,4 +1,5 @@
 class CartController < ApplicationController
+  before_action :authenticate_user!
   def add
     # get the Id of the product
     id = params[:id]
@@ -26,6 +27,14 @@ class CartController < ApplicationController
     cart[id] = cart[id] - 1
 
     redirect_to :action => :index
+  end
+  def remove
+
+    id = params[:id]
+    cart = session[:cart]
+    cart.delete id
+
+    redirect_to :root
   end
 
   def increase
