@@ -13,4 +13,8 @@ class UserController < ApplicationController
     flash[:notice] = "You have been successfully logged out!!"
     redirect_to :controller => :productitems
   end
+
+  def show
+    @user = User.find(params[:id])
+  end
 end

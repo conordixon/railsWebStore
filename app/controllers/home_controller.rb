@@ -8,4 +8,8 @@ class HomeController < ApplicationController
 
   def edit
   end
+
+  def createOrder
+    @orders = Order.last
+  end
 end

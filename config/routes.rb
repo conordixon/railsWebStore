@@ -1,18 +1,29 @@
 Rails.application.routes.draw do
-  devise_for :users, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
+  get 'orderitems/index'
+  get 'orderitems/show'
+  get 'orderitems/new'
+  get 'orderitems/edit'
+  resources :orders do
+    resources :orderitems
+  end
 
+  resources :categories
 
+  devise_for :users do resources :orders end
+  get '/checkout' => 'cart#createOrder'
+  get '/users/:id' => 'users#show'
+
+  root 'home#index'
   get 'home/index'
   get '/home' => 'home#index'
-  root 'home#index'
 
-
+  get 'cart/index'
   get '/cart', to: 'cart#index'
   get '/cart/:id', to: 'cart#add'
   get '/clearcart' => 'cart#clear'
-  get '/cart/increase/:id', to: 'cart#increase'
-  get '/cart/reduce/:id', to: 'cart#reduce'
-  get '/cart/remove/:id', to: 'cart#remove'
+  get 'increase/:id', to: 'cart#increase'
+  get 'reduce/:id', to: 'cart#reduce'
+  get 'remove/:id', to: 'cart#remove'
 
   get '/login' => 'user#login'
   get '/logout' => 'user#logout'
