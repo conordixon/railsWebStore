@@ -4,10 +4,11 @@
   <% if session[:login] == 1 %>
   <li><%= link_to "Admin Log Out", logout_path %></li>
   <% else %>
-  <li><%= link_to "Admin Log In", login_path %></li>
+  <!--<li><%= link_to "Admin Log In", login_path %></li>-->
   <% end %>
   <% if user_signed_in? %>
     <li><a href="#">Hello <%= current_user.email %></a></li>
+    <li><a <%= link_to 'Edit Profile', edit_user_registration_path, :class => 'navbar-link' %>
     <li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
     <li><%= link_to "View Cart", "/cart" %></li>
     <li><%= link_to "View Orders", orders_path %></li>
