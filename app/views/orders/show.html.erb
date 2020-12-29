@@ -1,19 +1,53 @@
-<p id="notice"><%= notice %></p>
+<div id="itemsContainer">
+  <p id="notice"><%= notice %></p>
+  <h1>Order Details</h1>
+  <table id="customers">
+    <tr>
+      <% if @order.user.email == @user.email %>
+      <td>Order Date:</td>
+      <td>Ordered By:</td>
+      <td>Order date:</td>
+      <% else %>
 
-<p>
-  <strong>Order date:</strong>
-  <%= @order.order_date %>
-</p>
+        <h1>You did not place this order</h1>
+      <% end %>
+    </tr>
 
-<p>
-  <strong>User:</strong>
-  <%= @order.user_id %>
-</p>
+    <tr>
+      <% if @order.user.email == @user.email %>
+      <td><%= @order.order_date %></td>
+      <td><%= @order.user.email %></td>
+      <td><%= @order.status %></td>
+      <% else %>
 
-<p>
-  <strong>Status:</strong>
-  <%= @order.status %>
-</p>
+        <h1>You did not place this order</h1>
+      <% end %>
+    </tr>
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+    <tr>
+      <td><%= link_to 'Edit', edit_order_path(@order), :class =>"button" %></td>
+      <td><%= link_to 'Back', orders_path, :class =>"button" %></td>
+
+    </tr>
+  </table>
+  <h2>Order Items</h2>
+  <table id="customers">
+    <tr>
+        <td>Created at:</td>
+        <td>Product Name</td>
+        <td>Quantity:</td>
+        <td>Price:</td>
+
+    </tr>
+    <% @orderitems.each do |orderitems| %>
+      <tr>
+        <td><%= orderitems.created_at %></td>
+        <td><%= orderitems.productname %></td>
+        <td><%= orderitems.quantity %></td>
+        <td><%= orderitems.price %></td>
+      </tr>
+    <% end %>
+    <tr></tr>
+  </table>
+
+</div>

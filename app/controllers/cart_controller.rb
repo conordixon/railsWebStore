@@ -57,9 +57,9 @@ class CartController < ApplicationController
     else
       @cart = {}
     end
-    end
+end
 
-  def createOrder
+  def createorder
     @user = User.find(current_user.id)
     @order = @user.orders.build(:order_date => DateTime.now, :status => 'Pending')
     @order.save
