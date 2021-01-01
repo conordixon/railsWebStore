@@ -49,7 +49,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: railsWebStore_production
-  username: railsWebStore
-  password: <%= ENV['RAILSWEBSTORE_DATABASE_PASSWORD'] %>
+      adapter: postgresql
+      database: railsWebStore_production
+      pool: 5
+      timeout: 5000
