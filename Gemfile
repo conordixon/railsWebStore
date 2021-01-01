@@ -27,6 +27,8 @@ gem 'simple_form'
 gem 'carrierwave', '~> 2.0'
 #Use mini magick gem installed graphicsmagick locally with Homebrew
 gem 'mini_magick', '~> 4.3'
+#Use dotenv-rails
+gem 'dotenv-rails'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
