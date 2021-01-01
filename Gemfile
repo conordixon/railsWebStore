@@ -23,6 +23,12 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.16'
 #Use devise gem
 gem 'devise', '4.7.3'
+#Use simple form gem
+gem 'simple_form'
+#Use carrier wave gem
+gem 'carrierwave', '~> 2.0'
+#Use mini magick gem installed graphicsmagick locally with Homebrew
+gem 'mini_magick', '~> 4.3'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

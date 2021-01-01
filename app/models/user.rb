@@ -1,4 +1,11 @@
 class User < ApplicationRecord
+  # self.abstract_class = true
+  mount_uploader :avatar, AvatarUploader
+
+  # # User Avatar Validation
+  validates_integrity_of  :avatar
+  validates_processing_of :avatar
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable,
@@ -13,4 +20,4 @@ class User < ApplicationRecord
     params.require(:user).permit(:email, :password, :password_confirmation, :remember_me)
   end
   has_many :orders
-end
+  end

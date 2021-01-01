@@ -17,4 +17,8 @@ class UserController < ApplicationController
   def show
     @user = User.find(params[:id])
   end
+
+  def update
+    params.require(:user).permit(:email, :password, :current_password, :password_confirmation, {avatar: []})
+  end
 end
