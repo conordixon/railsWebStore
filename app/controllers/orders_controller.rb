@@ -4,7 +4,8 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.json
   def index
-    @orders = Order.all
+    @user = User.find(current_user.id)
+    @orders = @user.orders.all
   end
 
   # GET /orders/1
@@ -74,5 +75,11 @@ class OrdersController < ApplicationController
     # Only allow a list of trusted parameters through.
     def order_params
       params.require(:order).permit(:order_date, :user_id, :status)
+    end
+
+  def admin_only
+    unless current_user.admin?
+      redirect_to :back, :alert => "Access denied."
+    end
   end
 end

@@ -6,7 +6,7 @@
       <% if @order.user.email == @user.email %>
       <td>Order Date:</td>
       <td>Ordered By:</td>
-      <td>Order date:</td>
+      <td>Order Date:</td>
       <% else %>
 
         <h1>You did not place this order</h1>
@@ -25,9 +25,10 @@
     </tr>
 
     <tr>
+      <% if current_user.admin? %>
       <td><%= link_to 'Edit', edit_order_path(@order), :class =>"button" %></td>
+      <% end %>
       <td><%= link_to 'Back', orders_path, :class =>"button" %></td>
-
     </tr>
   </table>
   <h2>Order Items</h2>

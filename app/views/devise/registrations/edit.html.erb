@@ -32,6 +32,41 @@
   </div>
 
   <div class="field">
+    <%= f.label :firstname %><br />
+    <%= f.text_field :firstname, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastname %><br />
+    <%= f.text_field :lastname, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address1 %><br />
+    <%= f.text_field :address1, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :town %><br />
+    <%= f.text_field :town, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :postalcode %><br />
+    <%= f.text_field :postalcode, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country, autofocus: true %>
+  </div>
+
+  <div class="field">
       <p>
         <label>My Avatar</label>
         <%= image_tag(@user.avatar_url) if @user.avatar? %>

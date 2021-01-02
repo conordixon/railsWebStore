@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 </p>
 <p>
-  <strong>Productname:</strong>
+  <strong>Product Name:</strong>
   <%= @productitem.productname %>
 </p>
 
@@ -19,6 +19,8 @@
   <strong>Brand:</strong>
   <%= @productitem.brand %>
 </p>
+<% if current_user.admin? %>
 <%= render 'form', productitem: @productitem %>
 <%= link_to 'Edit', edit_productitem_path(@productitem) %> |
+<% end %>
 <%= link_to 'Back', productitems_path %>
