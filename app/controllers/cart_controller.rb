@@ -67,7 +67,7 @@ end
     @cart.each do | id, quantity |
       item = Productitem.find_by_id(id)
       @orderitem = @order.orderitems.build(:item_id => item.id, :productname => item.productname, :description =>
-          item.description, :quantity => quantity, :price=> item.price)
+          item.description, :quantity => quantity, :price=> item.price, :totalquantity=> totalquantity)
       @orderitem.save
     end
     @orders = Order.all
