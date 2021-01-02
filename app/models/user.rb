@@ -20,4 +20,8 @@ class User < ApplicationRecord
     params.require(:user).permit(:email, :password, :password_confirmation, :remember_me)
   end
   has_many :orders
-  end
+end
+  private
+    def avatar_size_validation
+  errors[:avatar] << "should be less than 500KB" if avatar.size > 0.5.megabytes
+end

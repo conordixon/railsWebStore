@@ -28,7 +28,7 @@
         <td><%= productitem.price %></td>
         <td><%= productitem.brand %></td>
         <td><%= link_to 'Show', productitem %></td>
-        <% if user_signed_in? %>
+        <% if current_user.admin? %>
         <td><%= link_to 'Edit', edit_productitem_path(productitem)%></td>
         <td><%= link_to 'Destroy', productitem, method: :delete, data: { confirm: 'Are you sure?' }%></td>
         <% end %>

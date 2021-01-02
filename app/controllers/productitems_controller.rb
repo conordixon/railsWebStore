@@ -1,4 +1,6 @@
 class ProductitemsController < ApplicationController
+  # http_basic_authenticate_with name: "conor.dixon@gmail.com", password: "qwerty12", except: [:index, :show]
+
   before_action :set_productitem, only: [:show, :edit, :update, :destroy]
 
   # GET /productitems

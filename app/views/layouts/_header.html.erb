@@ -4,7 +4,7 @@
   <% if session[:login] == 1 %>
   <li><%= link_to "Admin Log Out", logout_path %></li>
   <% else %>
-  <!--<li><%= link_to "Admin Log In", login_path %></li>-->
+  <li><%= link_to "Admin Log In", login_path %></li>
   <% end %>
   <% if user_signed_in? %>
     <li><a href="#">Hello <%= current_user.email %></a></li>
