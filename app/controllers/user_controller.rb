@@ -1,5 +1,4 @@
 class UserController < ApplicationController
-  before_filter :admin_only, :except => :show
 
   def index
     @users = User.all
