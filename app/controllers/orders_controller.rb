@@ -76,10 +76,4 @@ class OrdersController < ApplicationController
     def order_params
       params.require(:order).permit(:order_date, :user_id, :status)
     end
-
-  def admin_only
-    unless current_user.admin?
-      redirect_to :back, :alert => "Access denied."
-    end
-  end
 end

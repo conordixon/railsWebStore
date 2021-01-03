@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  resources :orders do
+    resources :orderitems
+  end
+
   get 'orderitems/index'
   get 'orderitems/show'
   get 'orderitems/new'
@@ -7,15 +12,14 @@ Rails.application.routes.draw do
   get 'orders/show'
   get 'orders/new'
   get 'orders/edit'
-  resources :orders do
-    resources :orderitems
-  end
 
-  resources :categories
+  get '/orders/' => 'order#show'
 
   devise_for :users do resources :orders end
+
   get '/checkout' => 'cart#createorder'
   get '/users/:id' => 'users#show'
+  get '/paymentconfirmation/:id' => 'cart#paymentConfirmation'
 
   root 'home#index'
   get 'home/index'

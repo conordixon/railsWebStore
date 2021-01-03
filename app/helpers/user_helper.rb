@@ -11,6 +11,10 @@ module UserHelper
     User
   end
 
+  def user_admin
+    current_user && current_user.admin
+  end
+
   def devise_mapping
     @devise_mapping ||= Devise.mappings[:user]
   end

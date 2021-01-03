@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-  # self.abstract_class = true
   mount_uploader :avatar, AvatarUploader
 
   # # User Avatar Validation

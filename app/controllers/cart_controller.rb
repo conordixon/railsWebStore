@@ -74,4 +74,9 @@ end
     @orderitems = Orderitem.where(order_id: Order.last)
     session[:cart] = nil
   end
+
+  def paymentConfirmation
+    @order = Order.find(params[:id])
+    @order.update_attribute(:status, "Paid with Paypal")
   end
+end

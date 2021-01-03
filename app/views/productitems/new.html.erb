@@ -34,6 +34,15 @@
     <%= form.text_field :brand %>
   </div>
 
+  <div class="field">
+    <p>
+      <label>Product Image</label>
+      <%= image_tag(@productitem.productimage_url) if @productitem.productimage? %>
+      <%= form.file_field :productimage %>
+      <%= form.hidden_field :productimage_cache %>
+    </p>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

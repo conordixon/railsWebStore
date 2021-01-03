@@ -12,6 +12,7 @@
     <th colspan="3"></th>
   </tr>
   </thead>
+</table>
 
 <table>
   <thead>
@@ -23,15 +24,17 @@
   <tbody>
     <% @productitem.each do |productitem| %>
       <tr>
+        <% if productitem.productimage_url %>
+        <td><%= image_tag productitem.productimage_url(:thumb) %></td>
         <td><%= productitem.productname %></td>
         <td><%= productitem.description %></td>
         <td><%= productitem.price %></td>
         <td><%= productitem.brand %></td>
-
+        <% end %>
         <% if user_signed_in? %>
         <td><%= link_to 'Show', productitem %></td>
         <% end %>
-        <% if current_user.admin? %>
+        <% if user_admin %>
         <td><%= link_to 'Edit', edit_productitem_path(productitem)%></td>
         <td><%= link_to 'Destroy', productitem, method: :delete, data: { confirm: 'Are you sure?' }%></td>
         <% end %>
@@ -41,12 +44,11 @@
       </tr>
       <% end %>
       <ul>
-      <li><%= link_to "Home", "home#index" %></li>
+      <% if user_admin %>
+      <li><%= link_to 'New Product Item', new_productitem_path %></li>
+      <% end %>
       </ul>
   </tbody>
 </table>
 <br>
-<% if current_user.admin? %>
-<%= link_to 'New Product Item', new_productitem_path %>
-<% end %>
-</table>
+<%= link_to "Home", "home#index" %>

@@ -16,21 +16,18 @@
  *= require_self
  */
 //@import '~bootstrap/scss/bootstrap.scss';
-.headSec {
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-    min-height:10px;
-    background-color: #b3e0ff;
-    width: 100%;
-    margin-bottom:10px;
-    overflow: auto;
-
+main header {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  font-size: 60px;
+  color: #666;
 }
-.headSec h1 {
-    color: #ffffff;
-    font-size: 80px;
-    padding: 15px;
 
+.headSec h1 {
+    color: #777;
+    font-size: 200px;
+    padding: 30px;
 }
 ul {
     list-style-type: none;
@@ -50,22 +47,17 @@ li a {
 
 }
 .mainCont {
-
     margin: auto;
-    width:80%;
+    width: 70%;
     border: 3px solid #b3e0ff;
     padding: 10px;
     text-align: center;
 }
-.welcomeIm {width: 30%;}
-.foot {
-    min-height: 80px;
-    background-color: #b3e0ff;
-    width: 100%;
-    margin-top: 10px;
-    overflow: auto;
-
-
+footer {
+  background-color: #777;
+  padding: 30px;
+  text-align: center;
+  color: white;
 }
 
 .container {

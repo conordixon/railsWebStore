@@ -25,7 +25,7 @@
     </tr>
 
     <tr>
-      <% if current_user.admin? %>
+      <% if user_admin %>
       <td><%= link_to 'Edit', edit_order_path(@order), :class =>"button" %></td>
       <% end %>
       <td><%= link_to 'Back', orders_path, :class =>"button" %></td>

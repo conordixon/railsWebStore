@@ -1,6 +1,4 @@
 class ProductitemsController < ApplicationController
-  # http_basic_authenticate_with name: "conor.dixon@gmail.com", password: "qwerty12", except: [:index, :show]
-
   before_action :set_productitem, only: [:show, :edit, :update, :destroy]
 
   # GET /productitems
@@ -33,7 +31,7 @@ class ProductitemsController < ApplicationController
 
     respond_to do |format|
       if @productitem.save
-        format.html { redirect_to @productitem, notice: 'Productitem was successfully created.' }
+        format.html { redirect_to @productitem, notice: 'Product item was successfully created.' }
         format.json { render :show, status: :created, location: @productitem }
       else
         format.html { render :new }
@@ -43,7 +41,7 @@ class ProductitemsController < ApplicationController
 
 
     def productitem_params
-      params.require(:productitem).permit(:productname, :description, :price, :brand)
+      params.require(:productitem).permit(:productname, :description, :price, :brand, :productimage, :productimage_cache)
     end
   end
 
@@ -79,6 +77,6 @@ class ProductitemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def productitem_params
-      params.require(:productitem).permit(:productname, :description, :price, :brand)
-    end
+      params.require(:productitem).permit(:productname, :description, :price, :brand, :productimage, :productimage_cache)
+  end
 end

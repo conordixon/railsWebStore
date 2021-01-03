@@ -1,4 +1,4 @@
-<header class="headSec">
+<header class="main header">
   <ul>
 
   <% if session[:login] == 1 %>
@@ -11,8 +11,9 @@
     <li><%= link_to "View Cart", "/cart" %></li>
     <li><%= link_to "View Orders", orders_path %></li>
   <% else %>
-    <li><%= link_to 'Register Account', new_user_registration_path %></li>
-    <li><%= link_to 'Login', new_user_session_path %></li>
+      <li><%= link_to "Product Items", productitems_path %> </li>
+      <li><%= link_to 'Register Account', new_user_registration_path %></li>
+      <li><%= link_to 'Login', new_user_session_path %></li>
   <% end %>
   </ul>
 </header>
