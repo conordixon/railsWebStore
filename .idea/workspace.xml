@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3035603-bf12-4c3c-997b-a09631e91c35" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/cart_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/cart_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/orders_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/orders_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/productitems_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/productitems_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/user_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/user_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/user_helper.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/productitem.rb" afterPath="$PROJECT_DIR$/app/models/productitem.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change beforePath="$PROJECT_DIR$/app/views/cart/createorder.html.erb" afterPath="$PROJECT_DIR$/app/views/cart/createorder.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/cart/index.html.erb" afterPath="$PROJECT_DIR$/app/views/cart/index.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/orders/index.html.erb" afterPath="$PROJECT_DIR$/app/views/orders/index.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/orders/show.html.erb" afterPath="$PROJECT_DIR$/app/views/orders/show.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/productitems/index.html.erb" afterPath="$PROJECT_DIR$/app/views/productitems/index.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/productitems/new.html.erb" afterPath="$PROJECT_DIR$/app/views/productitems/new.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/productitems/show.html.erb" afterPath="$PROJECT_DIR$/app/views/productitems/show.html.erb" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -41,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="createorder.html.erb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="createorder.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/cart/createorder.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="382">
+              <caret line="51" column="100" lean-forward="false" selection-start-line="51" selection-start-column="100" selection-end-line="51" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -81,11 +60,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_helper.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user_helper.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/user_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -111,31 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/productitems/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.json.jbuilder" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/productitems/index.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/productitems/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -155,9 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>confirmation</find>
-      <find>productimages_url</find>
-      <find>url</find>
       <find>productimage</find>
       <find>medium</find>
       <find>productimage_url</find>
@@ -185,6 +161,9 @@
       <find>user_admin</find>
       <find>user_signed_in</find>
       <find>current_user</find>
+      <find>db.seed</find>
+      <find>paymentConfirmation</find>
+      <find>paymentconfirmation</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -227,7 +206,6 @@
         <option value="$PROJECT_DIR$/app/javascript/packs/src/application.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-        <option value="$PROJECT_DIR$/app/views/cart/createorder.html.erb" />
         <option value="$PROJECT_DIR$/app/uploaders/product_image_uploader.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/search.html.erb" />
@@ -249,6 +227,7 @@
         <option value="$PROJECT_DIR$/app/views/productitems/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/productitems_controller.rb" />
         <option value="$PROJECT_DIR$/app/helpers/user_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/cart/createorder.html.erb" />
       </list>
     </option>
   </component>
@@ -861,12 +840,12 @@
       <workItem from="1609514935986" duration="22000" />
       <workItem from="1609514978128" duration="30000" />
       <workItem from="1609515092574" duration="31788000" />
-      <workItem from="1609676529257" duration="21836000" />
+      <workItem from="1609676529257" duration="22642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206661000" />
+    <option name="totallyTimeSpent" value="207467000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -952,14 +931,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/orderitem.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_error_messages.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1120,14 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1316,14 +1279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cart/createorder.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cart/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1350,8 +1305,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/user_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cart/createorder.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="51" column="100" lean-forward="false" selection-start-line="51" selection-start-column="100" selection-end-line="51" selection-end-column="100" />
           <folding />
         </state>
       </provider>

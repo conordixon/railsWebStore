@@ -48,6 +48,6 @@
       <input type="hidden" name="amount" value="<%= @overall %>">
       <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
              name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
-      <input type="hidden" name="return" value="https://railswebstore.herokuapp.com/confirmation/<%= @order.id %>" >
+      <input type="hidden" name="return" value="https://railswebstore.herokuapp.com/paymentconfirmation/<%= @order.id %>" >
       <input type="hidden" name="notify_url" value="https://railswebstore.herokuapp.com/paymentconfirmation/<%= @order.id %>" >
   </form>
